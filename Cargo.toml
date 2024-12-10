@@ -1,20 +1,20 @@
 [package]
 edition = "2021"
-name    = "app-finder"
+name = "app-finder"
 version = "0.1.0"
 
 [dependencies]
-anyhow      = { workspace = true }
-base64      = { workspace = true }
-env_logger  = { workspace = true }
-lazy_static = { workspace = true }
-log         = { workspace = true }
-serde       = { workspace = true }
-sysinfo     = { workspace = true }
+anyhow = "1.0.94"
+base64 = "0.22.1"
+env_logger = "0.11.5"
+lazy_static = "1.5.0"
+log = "0.4.22"
+serde = { version = "1.0.215", features = ["derive"] }
+sysinfo = "0.33.0"
 
 
 [target.'cfg(target_os = "macos")'.dependencies]
-icns  = "0.3.1"
+icns = "0.3.1"
 plist = "1.7.0"
 
 
@@ -30,10 +30,10 @@ windows = { version = "0.58.0", features = [
 	"Win32_Storage_FileSystem",
 	"Win32_UI_Controls",
 	"Win32_UI_Shell",
-	"Win32_UI_WindowsAndMessaging"
+	"Win32_UI_WindowsAndMessaging",
 ] }
 winreg = "0.52.0"
 
 [dev-dependencies]
-ctor     = "0.2.9"
+ctor = "0.2.9"
 netstat2 = "0.11"
