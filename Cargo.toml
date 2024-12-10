@@ -1,7 +1,11 @@
 [package]
-edition = "2021"
 name = "app-finder"
 version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A cross-platform Rust library designed to help retrieve information about installed applications on various operating systems."
+repository = "https://github.com/aihui999/app-finder"
+keywords = ["installed-app", "app-finder", "app", "installed", "finder"]
 
 [dependencies]
 anyhow = "1.0.94"
